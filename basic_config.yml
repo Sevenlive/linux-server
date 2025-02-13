@@ -2,6 +2,13 @@
 
   vars:
     swap_file_size_mb: '2048'
-
+    security_ssh_password_authentication: "yes"
+    security_ssh_permit_root_login: "yes"
+    security_ssh_port: 22
+    node_exporter_arch: 'armv7'
   roles:
     - geerlingguy.swap
+    - geerlingguy.security
+    - geerlingguy.node_exporter
+    - geerlingguy.firewall
+    - geerlingguy.docker
