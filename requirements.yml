@@ -1,0 +1,6 @@
+- name: geerlingguy.swap
+- name: geerlingguy.security
+- name: geerlingguy.node_exporter
+- name: geerlingguy.firewall
+- name: geerlingguy.docker
+- name: geerlingguy.backup
