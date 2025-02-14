@@ -10,5 +10,4 @@
     - geerlingguy.swap
     - geerlingguy.security
     - geerlingguy.node_exporter
-    - geerlingguy.firewall
     - geerlingguy.docker
