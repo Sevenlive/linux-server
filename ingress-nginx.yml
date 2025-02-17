@@ -11,3 +11,7 @@
         chart_ref: ingress-nginx/ingress-nginx
         release_namespace: ingress
         create_namespace: true
+        values:
+          controller:
+            extraArgs:
+              update-status: "true"
