@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - name: Add ingress-nginx chart repo
+      kubernetes.core.helm_repository:
+        name: ingress-nginx
+        repo_url: "https://kubernetes.github.io/ingress-nginx"
+
+    - name: Deploy Ingress Nginx
+      kubernetes.core.helm:
+        name: ingress-nginx
+        chart_ref: ingress-nginx/ingress-nginx
+        release_namespace: ingress
+        create_namespace: true
