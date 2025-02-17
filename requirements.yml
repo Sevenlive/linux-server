@@ -3,3 +3,4 @@
 - name: geerlingguy.node_exporter
 - name: geerlingguy.docker
 - name: geerlingguy.backup
+- name: artis3n.tailscale
